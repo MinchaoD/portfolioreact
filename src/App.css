@@ -18,6 +18,9 @@ h1, h2, h3{
   font-size: 1.25rem;
 }
 
+.fa-heart{
+  color: red
+}
 
 .card-img-overlay .card-title {
   color: white;
@@ -26,8 +29,8 @@ h1, h2, h3{
 
 
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0;
+ 
+  padding: 20px 0 80px 0;
 }
 
 
@@ -95,4 +98,27 @@ h1, h2, h3{
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
+}
+
+.btn-project {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2;
+  height: 50px;
+  transition: all 200ms linear;
+  border-radius: 100px;
+  width: 100px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  border:5px ridge rgb(182, 22, 16);
+  cursor: pointer;
+  box-shadow: 0 40px 35px 0 rgba(16, 39, 112, .25);
+  outline: 1;
+  text-transform: capitalize;
 }

@@ -3,22 +3,10 @@ import Zoom from 'react-reveal/Zoom';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Typical from 'react-typical';
 import { Card, CardImg, CardTitle, CardText, CardBody, Button, CardDeck} from 'reactstrap';
+import Footer from './FooterComponent';
 
 
-class AnimationText extends Component {
-  render () {
-    return (
-        <div className="text">
-            
-            <Typical
-                steps={['Javascript', 1000, 'React', 1000, 'React Native', 1000, 'Redux', 1000,'BootStrap', 1000,'Python', 1000,'MoogoDb', 1000]}
-                loop={Infinity}
-                wrapper="b"
-            />
-      </div>
-    )
-  }
-}
+
 
 function Skills() {
     return (
@@ -41,8 +29,9 @@ function Projects() {
                             <CardText>
                                 <span>This project I used mostly bootstrap to create my own designed travel website.</span>
                             </CardText>
-                            <Button variant="secondary" size="lg" >Demo</Button>{' '}
-                            <Button variant="secondary" size="lg"  style={{float: 'right'}}>Code</Button>{' '}
+                            <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button size="lg"  className="btn-project">Demo</Button></a>
+                           
+                            <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button size="lg"  className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
                 <Card>
@@ -71,6 +60,20 @@ function Projects() {
     
 }  
 
+class AnimationText extends Component {
+    render () {
+      return (
+          <div className="text">
+              
+              <Typical
+                  steps={['Javascript', 1000, 'ReactJS', 1000, 'React Native', 1000, 'Redux', 1000,'BootStrap', 1000,'Python', 1000,'MoogoDb', 1000]}
+                  loop={Infinity}
+                  wrapper="b"
+              />
+        </div>
+      )
+    }
+  }
 function Presenter () {
     const FadeUp = batch(Fade(), Move());
   
@@ -82,16 +85,20 @@ function Presenter () {
             <div align="center" >
                 <span style={{ fontSize: "3em" }} align="center">I'm </span> <span style={{fontSize: "4em", color:"#800000"}}>Minchao Duclos </span> <br /> 
                 <span style={{ fontSize: "3em" }} align="center">a Developer & Designer</span>
-               
+                <br/><br/><br/>
                 <AnimationText />
             </div>
           </Animator>
         </ScrollPage>
         <ScrollPage page={1}>
-          <Skills />
+        <Animator  animation={FadeUp}>
+            <Skills />
+        </Animator>    
         </ScrollPage>
         <ScrollPage page={2}>
-          <Projects />
+        <Animator  animation={FadeUp}>
+            <Projects />
+        </Animator>
         </ScrollPage>
     </ScrollContainer>
     );
@@ -113,6 +120,7 @@ function Presenter () {
                 <span></span>
                 <span></span>
                 </div>  
+                <Footer />
                
             </div>
          )
