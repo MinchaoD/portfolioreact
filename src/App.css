@@ -6,31 +6,31 @@ body{
 
 h1, h2, h3{
   font-family: "Lobster", cursive;
-  color:black;
+
 }
 
 .text{
   font-size:2rem;
 
 }
-.card-title {
-  font-weight: 500;
-  font-size: 1.25rem;
+
+.title{
+  text-decoration: underline;
+  text-decoration-line: overline;
+  text-decoration-color: rgba(182, 22, 16);
+}
+
+.card-title{
+  font-size: 2rem;
 }
 
 .fa-heart{
   color: red
 }
 
-.card-img-overlay .card-title {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
 .site-footer {
  
-  padding: 20px 0 80px 0;
+  padding: 80px 0 80px 0;
 }
 
 
@@ -121,4 +121,5 @@ h1, h2, h3{
   box-shadow: 0 40px 35px 0 rgba(16, 39, 112, .25);
   outline: 1;
   text-transform: capitalize;
+  size:"lg" 
 }
