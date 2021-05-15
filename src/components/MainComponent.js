@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Zoom from 'react-reveal/Zoom';
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Move, ScrollPageContext} from "react-scroll-motion";
 import Typical from 'react-typical';
 import { Card, CardImg, CardTitle, CardText, CardBody, Button, CardDeck} from 'reactstrap';
-import Footer from './FooterComponent';
 
 
-function Skills() {
+
+function Aboutme() {
     return (
     <div className="container" align="center">
          <span className="title" style={{ fontSize: "3em" }} >About me </span>
-         <br/><br /> <br />
+         <br/><br /> <br /><br/><br /> <br />
          <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer and I love to code. I enjoy the happiness of building some cool and user friendly websites, apps and games. My skills include, but are not limited to: Html, Css, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, MongoDB </span>
        
     </div>
@@ -19,17 +19,15 @@ function Skills() {
 }  
 
 function Projects() {
-   
-
     return (
         <div className="container" align="center">
         <span className="title" style={{ fontSize: "3em" }} >Projects </span>
-        <br/><br /> <br />
+        <br/><br /> <br /><br/><br /><br/>
         <div className ="row justify-content-center">
         <div className = "col ">
             <CardDeck>
                 <Card>
-                        <CardImg  height="400"  src="/assets/images/project-hawaii.png" alt="image"/>
+                        <CardImg  height="300"  src="/assets/images/project-hawaii.png" alt="image"/>
                         <CardBody>
                         
                             <CardTitle>Hawaii Travel</CardTitle>
@@ -38,13 +36,13 @@ function Projects() {
                                 <span> For this project I used mostly Bootstrap and Css to create a Hawaii travel website. I focused on layout design, user interaction and code cleanup. </span>
                             </CardText>
                             <br/>
-                            <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://romantic-allen-15feaa.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
                 <Card>
-                        <CardImg  height="400"  src="/assets/images/project-house.png" alt="image"/>
+                        <CardImg  height="300"  src="/assets/images/project-house.png" alt="image"/>
                         <CardBody>
                         
                             <CardTitle>House Search</CardTitle>
@@ -53,13 +51,13 @@ function Projects() {
                                 <span>I used ReactJS to link a mockup mini dataset with the website. The same information and layout for each house were rendered with no-repeat code.</span>
                             </CardText>
                             <br/>
-                            <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://condescending-rosalind-74631b.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
                 <Card>
-                <CardImg  height="400"  src="/assets/images/project-house.png" alt="image"/>
+                <CardImg  height="300"  src="/assets/images/project-drum.png" alt="image"/>
                         <CardBody>
                         
                             <CardTitle>Drum Game</CardTitle>
@@ -68,13 +66,15 @@ function Projects() {
                                 <span> This is a little fun project! I used Vanilla JavaScript to create a Drum Playing Game. The drum can be played by both key press and mouse click. </span>
                             </CardText>
                             <br />
-                            <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://distracted-mestorf-f70ea5.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
-                            <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                            <a target="_blank" href="https://github.com/chaohg/drum" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
                 
             </CardDeck>
+
+            
         </div>
     </div>
    </div>
@@ -98,6 +98,42 @@ class AnimationText extends Component {
     }
   }
 
+  
+function Contactme() {
+    return(
+        <div className="container" align="center">
+            <span className="title" style={{ fontSize: "3em" }} >Contact Me </span>
+            <br/><br /> <br /><br/><br /> <br />
+           
+                <div className="row" >
+                    <div className="col" align="center">
+                        <a role="button" className="btn" href="tel:+12063838906"><i className="fa fa-phone-square extraIcon" ></i> </a>
+                    </div>
+                    <div className="col" align="center">
+                    <a role="button" className="btn" href="mailto: chaohg@hotmail.com"><i className="fa fa-envelope-square extraIcon"></i> </a>
+                    </div>
+                    <div className="col" align="center">
+                    <a role="button" className="btn" href="https://github.com/chaohg"> <i className="fa fa-github extraIcon"></i></a>
+                    </div>
+                </div>
+                <div className="row" >
+                    <div className="col">
+                        <a role="button" className="btn extraBtn"  href="tel:+12063838906"> 1-206-383-8906 </a><br />
+                    </div>
+                    <div className="col" align="center">
+                        <a role="button" className="btn extraBtn"  href="mailto: chaohg@hotmail.com">chaohg@hotmail.com </a>
+                    </div>
+                    <div className="col" align="center">
+                        <a role="button" className="btn extraBtn" href="https://github.com/chaohg">https://github.com/chaohg </a>
+                    </div>
+                </div>
+                
+       
+            
+        </div>
+    )
+}
+
 
 function Presenter () {
     const FadeUp = batch(Move());
@@ -117,13 +153,21 @@ function Presenter () {
           </Animator>
         </ScrollPage>
         <ScrollPage page={1}>
-        <Animator  animation={FadeUp}>
-            <Skills />
-        </Animator>    
+        
+            <Animator  animation={FadeUp}>
+                <Aboutme />
+            </Animator>    
         </ScrollPage>
-        <ScrollPage page={2}>
+        <ScrollPage  page={2} >
+            
+                <Animator  animation={FadeUp}>
+                    <Projects />
+                </Animator>
+        </ScrollPage>
+        <ScrollPage page={3}>
         <Animator  animation={FadeUp}>
-            <Projects />
+            <br /> <br /> <br /> <br /> <br />
+            <Contactme />
         </Animator>
         </ScrollPage>
     </ScrollContainer>
@@ -146,8 +190,6 @@ function Presenter () {
                 <span></span>
                 <span></span>
                 </div>  
-                <Footer />
-               
             </div>
          )
      }
