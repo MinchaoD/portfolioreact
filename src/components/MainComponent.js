@@ -36,7 +36,7 @@ function Projects() {
                                 <span> For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</span>
                             </CardText>
                             <br/>
-                            <a target="_blank" href="https://romantic-allen-15feaa.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
@@ -51,7 +51,7 @@ function Projects() {
                                 <span>I used ReactJS to develope this website, with one set of code rendering the information and layout for each house. The tour form is designed with validation features.</span>
                             </CardText>
                             <br/>
-                            <a target="_blank" href="https://condescending-rosalind-74631b.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://seattle-homes-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
@@ -66,7 +66,7 @@ function Projects() {
                                 <span> This is a fun little project! I used Vanilla JavaScript to create a Drum Playing Game. The drum can be played by both key press and mouse click. </span>
                             </CardText>
                             <br />
-                            <a target="_blank" href="https://distracted-mestorf-f70ea5.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://drum-game-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/drum" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
