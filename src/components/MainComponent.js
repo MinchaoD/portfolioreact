@@ -11,7 +11,7 @@ function Aboutme() {
     <div className="container" align="center">
          <span className="title" style={{ fontSize: "3em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
-         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer and I love to code. I enjoy the happiness of building some cool and user friendly websites, apps and games. My skills include, but are not limited to: Html, Css, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, MongoDB </span>
+         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB and MySQL. </span>
        
     </div>
     )
@@ -33,7 +33,7 @@ function Projects() {
                             <CardTitle>Hawaii Travel</CardTitle>
                       
                             <CardText>
-                                <span> For this project I used mostly Bootstrap and Css to create a Hawaii travel website. I focused on layout design, user interaction and code cleanup. </span>
+                                <span> For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</span>
                             </CardText>
                             <br/>
                             <a target="_blank" href="https://romantic-allen-15feaa.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
@@ -45,10 +45,10 @@ function Projects() {
                         <CardImg  height="300"  src="/assets/images/project-house.png" alt="image"/>
                         <CardBody>
                         
-                            <CardTitle>House Search</CardTitle>
+                            <CardTitle>Seattle Homes</CardTitle>
                       
                             <CardText>
-                                <span>I used ReactJS to link a mockup mini dataset with the website. The same information and layout for each house were rendered with no-repeat code.</span>
+                                <span>I used ReactJS to develope this website, with one set of code rendering the information and layout for each house. The tour form is designed with validation features.</span>
                             </CardText>
                             <br/>
                             <a target="_blank" href="https://condescending-rosalind-74631b.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
@@ -63,7 +63,7 @@ function Projects() {
                             <CardTitle>Drum Game</CardTitle>
                       
                             <CardText>
-                                <span> This is a little fun project! I used Vanilla JavaScript to create a Drum Playing Game. The drum can be played by both key press and mouse click. </span>
+                                <span> This is a fun little project! I used Vanilla JavaScript to create a Drum Playing Game. The drum can be played by both key press and mouse click. </span>
                             </CardText>
                             <br />
                             <a target="_blank" href="https://distracted-mestorf-f70ea5.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
