@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Zoom from 'react-reveal/Zoom';
-import { Animator, ScrollContainer, ScrollPage, batch, Move, ScrollPageContext} from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Move} from "react-scroll-motion";
 import Typical from 'react-typical';
 import { Card, CardImg, CardTitle, CardText, CardBody, Button, CardDeck} from 'reactstrap';
+import { makeStyles } from '@material-ui/core/styles';
+
 
 
 
@@ -11,54 +13,93 @@ function Aboutme() {
     <div className="container" align="center">
          <span className="title" style={{ fontSize: "3em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
-         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB and MySQL. </span>
-       
+         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more </span>
+        
     </div>
     )
     
 }  
 
-function Projects() {
+const useStyles = makeStyles({  // this is to allow styling for image in card 
+    root: {
+      borderTop: '5px solid',
+      marginTop: 30
+    }
+})
+
+function Projects1() {
     return (
         <div className="container" align="center">
-        <span className="title" style={{ fontSize: "3em" }} >Projects </span>
+            <span className="title" style={{ fontSize: "3em" }} >Projects </span>
+            <br/><br /> <br /><br/><br /><br/>
+            <div className ="row justify-content-center">
+                <div className = "col ">
+            
+                    <Card style={{ width: '30rem' }} >
+                            <CardImg  height="350" src="/assets/images/project-hawaii.png" alt="image"/>
+                            <CardBody   className={useStyles().root} >
+                            
+                                <CardTitle>Hawaii Travel</CardTitle>
+                        
+                                <CardText>
+                                    <span> For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</span>
+                                </CardText>
+                                <br/>
+                                <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            
+                                <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                            </CardBody>
+                    </Card>
+                </div>
+                <div className = "col ">
+                    <Card style={{ width: '30rem' }} >
+                            <CardImg   height="350" src="/assets/images/project-house.png" alt="image"/>
+                            <CardBody  className={useStyles().root} >
+                            
+                                <CardTitle>Seattle Homes</CardTitle>
+                        
+                                <CardText>
+                                    <span>I used ReactJS to develope this website, with one set of code rendering the information and layout for each house. The tour form is designed with validation features.</span>
+                                </CardText>
+                                <br/>
+                                <a target="_blank" href="https://seattle-homes-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            
+                                <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                            </CardBody>
+                    </Card>
+                </div>
+            </div>
+   </div>
+ )
+}  
+
+function Projects2() {
+    return (
+        <div className="container" align="center">
+      
         <br/><br /> <br /><br/><br /><br/>
         <div className ="row justify-content-center">
-        <div className = "col ">
-            <CardDeck>
-                <Card>
-                        <CardImg  height="300"  src="/assets/images/project-hawaii.png" alt="image"/>
-                        <CardBody>
+            <div className = "col ">
+                <Card style={{ width: '30rem' }} >
+                <CardImg  height="350"  src="/assets/images/project-todolist.png" alt="image"/>
+                        <CardBody  className={useStyles().root} >
                         
-                            <CardTitle>Hawaii Travel</CardTitle>
+                            <CardTitle>To Do List Mobile App</CardTitle>
                       
                             <CardText>
-                                <span> For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</span>
+                                <span> I built this to-do-list mobile app with Redux in React Native. It can add and delete tasks. The data can be stored using Persist Redux Store. </span>
                             </CardText>
-                            <br/>
-                            <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <br />
+                            <a target="_blank" href="https://expo.io/@minchao/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
-                            <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                            <a target="_blank" href="https://github.com/chaohg/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
-                <Card>
-                        <CardImg  height="300"  src="/assets/images/project-house.png" alt="image"/>
-                        <CardBody>
-                        
-                            <CardTitle>Seattle Homes</CardTitle>
-                      
-                            <CardText>
-                                <span>I used ReactJS to develope this website, with one set of code rendering the information and layout for each house. The tour form is designed with validation features.</span>
-                            </CardText>
-                            <br/>
-                            <a target="_blank" href="https://seattle-homes-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                           
-                            <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                        </CardBody>
-                </Card>
-                <Card>
-                <CardImg  height="300"  src="/assets/images/project-drum.png" alt="image"/>
-                        <CardBody>
+            </div>
+            <div className = "col ">
+                <Card style={{ width: '30rem' }} >
+                <CardImg  height="350"  src="/assets/images/project-drum.png" alt="image"/>
+                        <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Drum Game</CardTitle>
                       
@@ -71,17 +112,11 @@ function Projects() {
                             <a target="_blank" href="https://github.com/chaohg/drum" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
-                
-            </CardDeck>
-
-            
-        </div>
+            </div>
+          </div>
     </div>
-   </div>
-        
-    )
-    
-}  
+ )
+}
 
 class AnimationText extends Component {
     render () {
@@ -161,10 +196,16 @@ function Presenter () {
         <ScrollPage  page={2} >
             
                 <Animator  animation={FadeUp}>
-                    <Projects />
+                    <Projects1 />
                 </Animator>
         </ScrollPage>
-        <ScrollPage page={3}>
+        <ScrollPage  page={3} >
+            
+            <Animator  animation={FadeUp}>
+                <Projects2 />
+            </Animator>
+    </ScrollPage>
+        <ScrollPage page={4}>
         <Animator  animation={FadeUp}>
             <br /> <br /> <br /> <br /> <br />
             <Contactme />
