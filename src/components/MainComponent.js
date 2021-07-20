@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Zoom from 'react-reveal/Zoom';
 import { Animator, ScrollContainer, ScrollPage, batch, Move} from "react-scroll-motion";
 import Typical from 'react-typical';
-import { Card, CardImg, CardTitle, CardText, CardBody, Button, CardDeck} from 'reactstrap';
+import { Card, CardImg, CardTitle, CardText, CardBody, Button} from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
 
 
@@ -33,8 +33,25 @@ function Projects1() {
             <span className="title" style={{ fontSize: "3em" }} >Projects </span>
             <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center">
+               
                 <div className = "col ">
-            
+                    <Card style={{ width: '30rem' }} >
+                            <CardImg   height="350" src="/assets/images/project-house.png" alt="image"/>
+                            <CardBody  className={useStyles().root} >
+                            
+                                <CardTitle>Real Estate Search App</CardTitle>
+                        
+                                <CardText>
+                                    <span>I used ReactJS to develope this website, fetching from an API and rendering the search results with Google maps, virtual tours and many more detail information for each property.</span>
+                                </CardText>
+                                <br/>
+                                <a target="_blank" href="https://realestate-search.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            
+                                <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                            </CardBody>
+                    </Card>
+                </div>
+                <div className = "col ">
                     <Card style={{ width: '30rem' }} >
                             <CardImg  height="350" src="/assets/images/project-hawaii.png" alt="image"/>
                             <CardBody   className={useStyles().root} >
@@ -48,23 +65,6 @@ function Projects1() {
                                 <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                             
                                 <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                            </CardBody>
-                    </Card>
-                </div>
-                <div className = "col ">
-                    <Card style={{ width: '30rem' }} >
-                            <CardImg   height="350" src="/assets/images/project-house.png" alt="image"/>
-                            <CardBody  className={useStyles().root} >
-                            
-                                <CardTitle>Seattle Homes</CardTitle>
-                        
-                                <CardText>
-                                    <span>I used ReactJS to develope this website, with one set of code rendering the information and layout for each house. The tour form is designed with validation features.</span>
-                                </CardText>
-                                <br/>
-                                <a target="_blank" href="https://seattle-homes-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                            
-                                <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                             </CardBody>
                     </Card>
                 </div>
