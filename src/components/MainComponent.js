@@ -13,19 +13,59 @@ function Aboutme() {
     <div className="container" align="center">
          <span className="title" style={{ fontSize: "3em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
-         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more </span>
+         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and various certificates from Nucamp. </span>
         
     </div>
     )
     
 }  
 
-const useStyles = makeStyles({  // this is to allow styling for image in card 
-    root: {
-      borderTop: '5px solid',
-      marginTop: 30
-    }
-})
+function Certificate1() {
+    return (
+        <div className="container" align="center">
+        <span className="title" style={{ fontSize: "3em" }} >Certificates </span>
+        <br/><br /> <br /><br/><br /><br/>
+            <div className ="row justify-content-center">
+                <div className = "col-md-4 ">
+                    <Card >
+                            <CardImg   height="500" src="/assets/images/React Course Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+                <div className = "col-md-4 ">
+                    <Card >
+                            <CardImg   height="500" src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+                <div className = "col-md-4 ">
+                    <Card  >
+                            <CardImg   height="500" src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function Certificate2() {
+    return (
+        <div className="container" align="center">
+            <div className ="row justify-content-center">
+                <div className = "col-md-4 ">
+                    <Card >
+                            <CardImg   height="500" src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+                <div className = "col-md-4">
+                    <Card >
+                            <CardImg   height="500" src="/assets/images/Full Stack Web and Mobile Development Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+            </div>
+    </div>
+     )
+}
+
+
 
 function Projects1() {
     return (
@@ -193,19 +233,31 @@ function Presenter () {
                 <Aboutme />
             </Animator>    
         </ScrollPage>
-        <ScrollPage  page={2} >
+        <ScrollPage page={2}>
+        
+        <Animator  animation={FadeUp}>
+            <Certificate1 />
+        </Animator>    
+        </ScrollPage>
+        <ScrollPage page={3}>
+        
+        <Animator  animation={FadeUp}>
+            <Certificate2 />
+        </Animator>    
+        </ScrollPage>
+        <ScrollPage  page={4} >
             
                 <Animator  animation={FadeUp}>
                     <Projects1 />
                 </Animator>
         </ScrollPage>
-        <ScrollPage  page={3} >
+        <ScrollPage  page={5} >
             
             <Animator  animation={FadeUp}>
                 <Projects2 />
             </Animator>
     </ScrollPage>
-        <ScrollPage page={4}>
+        <ScrollPage page={6}>
         <Animator  animation={FadeUp}>
             <br /> <br /> <br /> <br /> <br />
             <Contactme />
@@ -236,5 +288,11 @@ function Presenter () {
      }
  }
  
+ const useStyles = makeStyles({  // this is to allow styling for image in card 
+    root: {
+      borderTop: '5px solid',
+      marginTop: 30
+    }
+})
 
 export default Main;
