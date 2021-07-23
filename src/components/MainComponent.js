@@ -28,17 +28,17 @@ function Certificate1() {
             <div className ="row justify-content-center">
                 <div className = "col-md-4 ">
                     <Card >
-                            <CardImg   height="500" src="/assets/images/React Course Certificate.jpg" alt="image"/>
+                            <CardImg   height="450" src="/assets/images/React Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
                 <div className = "col-md-4 ">
                     <Card >
-                            <CardImg   height="500" src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
+                            <CardImg   height="450" src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
                 <div className = "col-md-4 ">
                     <Card  >
-                            <CardImg   height="500" src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
+                            <CardImg   height="450" src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
             </div>
@@ -52,12 +52,12 @@ function Certificate2() {
             <div className ="row justify-content-center">
                 <div className = "col-md-4 ">
                     <Card >
-                            <CardImg   height="500" src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
+                            <CardImg   height="450" src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
                 <div className = "col-md-4">
                     <Card >
-                            <CardImg   height="500" src="/assets/images/Full Stack Web and Mobile Development Certificate.jpg" alt="image"/>
+                            <CardImg   height="450" src="/assets/images/Full Stack Web and Mobile Development Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
             </div>
@@ -75,7 +75,7 @@ function Projects1() {
             <div className ="row justify-content-center">
                
                 <div className = "col ">
-                    <Card style={{ width: '30rem' }} >
+                    <Card className={useStyles().border} style={{ width: '30rem' }} >
                             <CardImg   height="350" src="/assets/images/project-house.png" alt="image"/>
                             <CardBody  className={useStyles().root} >
                             
@@ -92,7 +92,7 @@ function Projects1() {
                     </Card>
                 </div>
                 <div className = "col ">
-                    <Card style={{ width: '30rem' }} >
+                    <Card className={useStyles().border} style={{ width: '30rem' }} >
                             <CardImg  height="350" src="/assets/images/project-hawaii.png" alt="image"/>
                             <CardBody   className={useStyles().root} >
                             
@@ -120,7 +120,7 @@ function Projects2() {
         
         <div className ="row justify-content-center">
             <div className = "col ">
-                <Card style={{ width: '30rem' }} >
+                <Card className={useStyles().border} style={{ width: '30rem' }} >
                 <CardImg  height="350"  src="/assets/images/project-todolist.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
@@ -137,7 +137,7 @@ function Projects2() {
                 </Card>
             </div>
             <div className = "col ">
-                <Card style={{ width: '30rem' }} >
+                <Card className={useStyles().border} style={{ width: '30rem' }} >
                 <CardImg  height="350"  src="/assets/images/project-drum.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
@@ -164,7 +164,7 @@ function Projects3() {
         <div className="container" align="center">
         <div className ="row justify-content-center">
             <div className = "col ">
-                <Card style={{ width: '30rem' }} >
+                <Card className={useStyles().border} style={{ width: '30rem' }} >
                 <CardImg  height="350"  src="/assets/images/project-nucamp.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
@@ -174,15 +174,15 @@ function Projects3() {
                                 <span> This project was based on ReactJS and Redux. The github was set up in branches to record every step of the development.  </span>
                             </CardText>
                             <br />
-                            <a target="_blank" href="https://expo.io/@minchao/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://nucamp-website.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
             </div>
             <div className = "col ">
-                <Card style={{ width: '30rem' }} >
-                <CardImg  height="350"  src="/assets/images/project-portfolio.png" alt="image"/>
+                <Card className={useStyles().border} style={{ width: '30rem' }} >
+                <CardImg  height="350"  src="/assets/images/project-portfolio1.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Portfolio Website</CardTitle>
@@ -319,8 +319,13 @@ function Presenter () {
  
  const useStyles = makeStyles({  // this is to allow styling for image in card 
     root: {
-      borderTop: '5px solid',
-      marginTop: 30
+      borderTop: '3px solid',
+      marginTop: 20
+    },
+    border: {
+        minWidth: 275,
+        border: '3px solid black',
+        borderRadius: '10px'
     }
 })
 
