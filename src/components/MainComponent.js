@@ -108,6 +108,7 @@ function Projects1() {
                             </CardBody>
                     </Card>
                 </div>
+                
             </div>
    </div>
  )
@@ -116,8 +117,7 @@ function Projects1() {
 function Projects2() {
     return (
         <div className="container" align="center">
-      
-        <br/><br /> <br /><br/><br /><br/>
+        
         <div className ="row justify-content-center">
             <div className = "col ">
                 <Card style={{ width: '30rem' }} >
@@ -150,6 +150,50 @@ function Projects2() {
                             <a target="_blank" href="https://drum-game-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/drum" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                        </CardBody>
+                </Card>
+            </div>
+          </div>
+    </div>
+ )
+}
+
+
+function Projects3() {
+    return (
+        <div className="container" align="center">
+        <div className ="row justify-content-center">
+            <div className = "col ">
+                <Card style={{ width: '30rem' }} >
+                <CardImg  height="350"  src="/assets/images/project-nucamp.png" alt="image"/>
+                        <CardBody  className={useStyles().root} >
+                        
+                            <CardTitle>Nucamp Project</CardTitle>
+                      
+                            <CardText>
+                                <span> This project was based on ReactJS and Redux. The github was set up in branches to record every step of the development.  </span>
+                            </CardText>
+                            <br />
+                            <a target="_blank" href="https://expo.io/@minchao/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                           
+                            <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                        </CardBody>
+                </Card>
+            </div>
+            <div className = "col ">
+                <Card style={{ width: '30rem' }} >
+                <CardImg  height="350"  src="/assets/images/project-portfolio.png" alt="image"/>
+                        <CardBody  className={useStyles().root} >
+                        
+                            <CardTitle>Portfolio Website</CardTitle>
+                      
+                            <CardText>
+                                <span> This is a portfolio I made with React mostly. It was fun to explore the ways of adding the animations for this little project by using CSS. </span>
+                            </CardText>
+                            <br />
+                            <a target="_blank" href="https://minchao-duclos.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                           
+                            <a target="_blank" href="https://github.com/chaohg/portfolio" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
             </div>
@@ -228,40 +272,25 @@ function Presenter () {
           </Animator>
         </ScrollPage>
         <ScrollPage page={1}>
-        
             <Animator  animation={FadeUp}>
                 <Aboutme />
             </Animator>    
         </ScrollPage>
-        <ScrollPage page={2}>
-        
-        <Animator  animation={FadeUp}>
-            <Certificate1 />
-        </Animator>    
-        </ScrollPage>
-        <ScrollPage page={3}>
-        
-        <Animator  animation={FadeUp}>
-            <Certificate2 />
-        </Animator>    
-        </ScrollPage>
-        <ScrollPage  page={4} >
-            
-                <Animator  animation={FadeUp}>
-                    <Projects1 />
-                </Animator>
-        </ScrollPage>
-        <ScrollPage  page={5} >
-            
+        <Certificate1/>
+        <br/>
+        <Certificate2/>
+        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        <Projects1/>
+        <br/> <br/>
+        <Projects2/>
+        <br/> <br/>
+        <Projects3/>
+        <br/> <br/>
+        <ScrollPage page={7}>
             <Animator  animation={FadeUp}>
-                <Projects2 />
+                <br /> <br /> <br /> <br /> <br />
+                <Contactme />
             </Animator>
-    </ScrollPage>
-        <ScrollPage page={6}>
-        <Animator  animation={FadeUp}>
-            <br /> <br /> <br /> <br /> <br />
-            <Contactme />
-        </Animator>
         </ScrollPage>
     </ScrollContainer>
     );
