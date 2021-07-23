@@ -324,8 +324,7 @@ function Presenter () {
     },
     border: {
         minWidth: 275,
-        border: '3px solid black',
-        borderRadius: '10px'
+        border: '2px solid black'
     }
 })
 
