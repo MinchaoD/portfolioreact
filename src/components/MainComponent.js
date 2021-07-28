@@ -13,7 +13,7 @@ function Aboutme() {
     <div className="container" align="center">
          <span className="title" style={{ fontSize: "3em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
-         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and various certificates from Nucamp. </span>
+         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
         
     </div>
     )
@@ -57,7 +57,7 @@ function Certificate2() {
                 </div>
                 <div className = "col-md-4">
                     <Card >
-                            <CardImg   height="450" src="/assets/images/Full Stack Web and Mobile Development Certificate.jpg" alt="image"/>
+                            <CardImg   height="450" src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
                     </Card>
                 </div>
             </div>
