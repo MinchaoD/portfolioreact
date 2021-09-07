@@ -10,7 +10,7 @@ h1, h2, h3{
 }
 
 .text{
-  font-size:2rem;
+  font-size:2em;
 
 }
 
@@ -105,7 +105,7 @@ h1, h2, h3{
 }
 
 .extraBtn{ 
-  font-size:20px; 
+  font-size:1.5vw; 
   font-weight:800;
 }
 

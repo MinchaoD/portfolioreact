@@ -6,14 +6,12 @@ import { Card, CardImg, CardTitle, CardText, CardBody, Button} from 'reactstrap'
 import { makeStyles } from '@material-ui/core/styles';
 
 
-
-
 function Aboutme() {
     return (
     <div className="container" align="center">
-         <span className="title" style={{ fontSize: "3em" }} >About me </span>
+         <span className="title" style={{ fontSize: "2.5em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
-         <span style={{ fontSize: "2em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
+         <span style={{ fontSize: "1.5em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
         
     </div>
     )
@@ -23,7 +21,7 @@ function Aboutme() {
 function Certificate1() {
     return (
         <div className="container" align="center">
-        <span className="title" style={{ fontSize: "3em" }} >Certificates </span>
+        <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
         <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center">
                 <div className = "col-md-4 ">
@@ -70,7 +68,7 @@ function Certificate2() {
 function Projects1() {
     return (
         <div className="container" align="center">
-            <span className="title" style={{ fontSize: "3em" }} >Projects </span>
+            <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
             <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center">
                
@@ -221,7 +219,7 @@ class AnimationText extends Component {
 function Contactme() {
     return(
         <div className="container" align="center">
-            <span className="title" style={{ fontSize: "3em" }} >Contact Me </span>
+            <span className="title" style={{ fontSize: "2.5em" }} >Contact Me </span>
             <br/><br /> <br /><br/><br /> <br />
            
                 <div className="row" >
@@ -236,7 +234,7 @@ function Contactme() {
                     </div>
                 </div>
                 <div className="row" >
-                    <div className="col">
+                    <div className="col" align='center'>
                         <a role="button" className="btn extraBtn"  href="tel:+12063838906"> 1-206-383-8906 </a><br />
                     </div>
                     <div className="col" align="center">
@@ -258,26 +256,23 @@ function Presenter () {
     const FadeUp = batch(Move());
   
     return (
-      <ScrollContainer >
-        <ScrollPage page={0} >
-          <Animator  animation={FadeUp}>
+      <div>
+        
             <Zoom>  
             <div align="center" >
-                <span style={{ fontSize: "3em" }}>Hi, I'm </span> <span style={{fontSize: "4em", color:"#800000"}}>Minchao Duclos </span> <br /> 
-                <span style={{ fontSize: "3em" }}>a Developer & Designer</span>
+                <span style={{ fontSize: "2.5em" }}>Hi, I'm </span> <span style={{fontSize: "3.5em", color:"#800000"}}>Minchao Duclos </span> <br /> 
+                <span style={{ fontSize: "2.5em" }}>a Developer & Designer</span>
                 <br/><br/><br/>
                 <AnimationText />
             </div>
             </Zoom>
-          </Animator>
-        </ScrollPage>
-        <ScrollPage page={1}>
-            <Animator  animation={FadeUp}>
-                <Aboutme />
-            </Animator>    
-        </ScrollPage>
+        
+        <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/>
+       
+        <Aboutme />
+        <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/>
         <Certificate1/>
-        <br/>
+        <br/> <br/>
         <Certificate2/>
         <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
         <Projects1/>
@@ -285,23 +280,63 @@ function Presenter () {
         <Projects2/>
         <br/> <br/>
         <Projects3/>
-        <br/> <br/>
-        <ScrollPage page={7}>
-            <Animator  animation={FadeUp}>
-                <br /> <br /> <br /> <br /> <br />
-                <Contactme />
-            </Animator>
-        </ScrollPage>
-    </ScrollContainer>
+        <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        <Contactme />
+        <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+           
+     </div>
     );
   };
 
+
+//   function Presenter () {
+//     const FadeUp = batch(Move());
+  
+//     return (
+//       <ScrollContainer >
+//         <ScrollPage page={0} >
+//           <Animator  animation={FadeUp}>
+//             <Zoom>  
+//             <div align="center" >
+//                 <span style={{ fontSize: "3em" }}>Hi, I'm </span> <span style={{fontSize: "4em", color:"#800000"}}>Minchao Duclos </span> <br /> 
+//                 <span style={{ fontSize: "3em" }}>a Developer & Designer</span>
+//                 <br/><br/><br/>
+//                 <AnimationText />
+//             </div>
+//             </Zoom>
+//           </Animator>
+//         </ScrollPage>
+//         <ScrollPage page={1}>
+//             <Animator  animation={FadeUp}>
+//                 <Aboutme />
+//             </Animator>    
+//         </ScrollPage>
+//         <br/> <br/> <br/> <br/> <br/>
+//         <Certificate1/>
+//         <br/>
+//         <Certificate2/>
+//         <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+//         <Projects1/>
+//         <br/> <br/>
+//         <Projects2/>
+//         <br/> <br/>
+//         <Projects3/>
+//         <br/> <br/>
+//         <ScrollPage page={7}>
+//             <Animator  animation={FadeUp}>
+//                 <br /> <br /> <br /> <br /> <br />
+//                 <Contactme />
+//             </Animator>
+//         </ScrollPage>
+//     </ScrollContainer>
+//     );
+//   };
 
  
  class Main extends Component {
      render() {
          return (
-            <div>
+            <div >
                 <div class="bg"></div>
                 <div class="bg bg2"></div>
                 <div class="bg bg3"></div>
