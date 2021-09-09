@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 function Aboutme() {
     return (
-    <div className="container" align="center">
+    <div className="container gapaboutme" align="center">
          <span className="title" style={{ fontSize: "2.5em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
          <span style={{ fontSize: "1.5em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
@@ -20,7 +20,7 @@ function Aboutme() {
 
 function Certificate() {
     return (
-        <div className="container" align="center">
+        <div className="container maingap" align="center">
         <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
         <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center ">
@@ -60,9 +60,9 @@ function Certificate() {
 
 
 
-function Projects1() {
+function Projects() {
     return (
-        <div className="container" align="center">
+        <div className="container maingap " align="center">
             <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
             <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center">
@@ -77,7 +77,7 @@ function Projects1() {
                                 <CardText>
                                     <span>I used ReactJS to develope this website, fetching from an API and rendering the search results with Google maps, virtual tours and many more detail information for each property.</span>
                                 </CardText>
-                                <br/>
+                                
                                 <a target="_blank" href="https://realestate-search.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                                 <a target="_blank" href="https://www.loom.com/share/62f733b1a9ad4d3aabe0e3625b3022e2" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'center'}}>Video</Button></a>
                                 <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
@@ -94,7 +94,7 @@ function Projects1() {
                                 <CardText>
                                     <span> For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</span>
                                 </CardText>
-                                <br/>
+                             
                                 <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                             
                                 <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
@@ -103,15 +103,7 @@ function Projects1() {
                 </div>
                 
             </div>
-   </div>
- )
-}  
-
-function Projects2() {
-    return (
-        <div className="container" align="center">
-        
-        <div className ="row justify-content-center">
+            <div className ="row justify-content-center">
             <div className = "col gap">
                 <Card className={useStyles().border} style={{ width: '20' }} >
                 <CardImg  height="400"  src="/assets/images/project-todolist.png" alt="image"/>
@@ -122,7 +114,7 @@ function Projects2() {
                             <CardText>
                                 <span> I built this to-do-list mobile app with Redux in React Native. It can add and delete tasks. The data can be stored using Persist Redux Store. </span>
                             </CardText>
-                            <br />
+                    
                             <a target="_blank" href="https://expo.io/@minchao/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
@@ -139,7 +131,6 @@ function Projects2() {
                             <CardText>
                                 <span> This is a fun little project! I used Vanilla JavaScript to create a Drum Playing Game. The drum can be played by both key press and mouse click. </span>
                             </CardText>
-                            <br />
                             <a target="_blank" href="https://drum-game-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/drum" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
@@ -147,15 +138,7 @@ function Projects2() {
                 </Card>
             </div>
           </div>
-    </div>
- )
-}
-
-
-function Projects3() {
-    return (
-        <div className="container" align="center">
-        <div className ="row justify-content-center">
+          <div className ="row justify-content-center">
             <div className = "col gap">
                 <Card className={useStyles().border} style={{ width: '30' }} >
                 <CardImg  height="400"  src="/assets/images/project-nucamp.png" alt="image"/>
@@ -166,7 +149,7 @@ function Projects3() {
                             <CardText>
                                 <span> This project was developed with ReactJS as well as Redux. The github was set up in branches to record every step of the development.  </span>
                             </CardText>
-                            <br />
+                        
                             <a target="_blank" href="https://nucamp-website.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
@@ -184,7 +167,7 @@ function Projects3() {
                             <CardText>
                                 <span> This is a portfolio I made with React mostly. It was fun to explore the ways of adding the animations for this little project by using CSS. </span>
                             </CardText>
-                            <br />
+                        
                             <a target="_blank" href="https://minchao-duclos.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/portfolio" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
@@ -192,9 +175,9 @@ function Projects3() {
                 </Card>
             </div>
           </div>
-    </div>
+   </div>
  )
-}
+}  
 
 class AnimationText extends Component {
     render () {
@@ -214,7 +197,7 @@ class AnimationText extends Component {
   
 function Contactme() {
     return(
-        <div className="container" align="center">
+        <div className="container maingap" align="center">
             <span className="title" style={{ fontSize: "2.5em" }} >Contact Me </span>
             <br/><br /> <br /><br/><br /> <br />
            
@@ -262,22 +245,10 @@ function Presenter () {
                 <AnimationText />
             </div>
             </Zoom>
-        
-        <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/>
-       
         <Aboutme />
-        <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/>
-        
-        <Projects1/>
-        
-        <Projects2/>
-        
-        <Projects3/>
-        <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-        <Certificate/>        
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        <Projects/>
+        <Certificate />        
         <Contactme />
-        <br/> <br/><br/> <br/> <br/><br/> <br/>
      </div>
     );
   };
@@ -353,7 +324,7 @@ function Presenter () {
     },
     border: {
         minWidth: 275,
-        border: '2px solid black'
+        border: '2px solid gold'
     }
 })
 

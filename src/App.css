@@ -134,5 +134,16 @@ h1, h2, h3{
 }
 .gap{
   padding:1rem
+}
 
+.maingap{
+  padding: 15rem 0 5rem 0
+}
+
+.gapaboutme{
+  padding: 40rem 0 0 0
+}
+
+.gapproject{
+  padding:2rem 0 0 0
 }
