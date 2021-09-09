@@ -132,3 +132,7 @@ h1, h2, h3{
   text-transform: capitalize;
   size:"lg" 
 }
+.gap{
+  padding:1rem
+
+}

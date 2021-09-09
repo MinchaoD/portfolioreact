@@ -18,25 +18,38 @@ function Aboutme() {
     
 }  
 
-function Certificate1() {
+function Certificate() {
     return (
         <div className="container" align="center">
         <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
         <br/><br /> <br /><br/><br /><br/>
-            <div className ="row justify-content-center">
-                <div className = "col-md-4 ">
+            <div className ="row justify-content-center ">
+                <div className = "col-md-4 gap">
                     <Card >
-                            <CardImg   height="450" src="/assets/images/React Course Certificate.jpg" alt="image"/>
+                            <CardImg   height="450vw" src="/assets/images/React Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
-                <div className = "col-md-4 ">
+                
+                <div className = "col-md-4 gap">
                     <Card >
-                            <CardImg   height="450" src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
+                            <CardImg   height="450vw" src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
-                <div className = "col-md-4 ">
+                <div className = "col-md-4 gap">
                     <Card  >
-                            <CardImg   height="450" src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
+                            <CardImg   height="450vw" src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+            </div>
+            <div className ="row justify-content-center">
+                <div className = "col-md-4 gap ">
+                    <Card >
+                            <CardImg   height="450" src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
+                    </Card>
+                </div>
+                <div className = "col-md-4 gap">
+                    <Card >
+                            <CardImg   height="450" src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
                     </Card>
                 </div>
             </div>
@@ -44,24 +57,6 @@ function Certificate1() {
     )
 }
 
-function Certificate2() {
-    return (
-        <div className="container" align="center">
-            <div className ="row justify-content-center">
-                <div className = "col-md-4 ">
-                    <Card >
-                            <CardImg   height="450" src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
-                    </Card>
-                </div>
-                <div className = "col-md-4">
-                    <Card >
-                            <CardImg   height="450" src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
-                    </Card>
-                </div>
-            </div>
-    </div>
-     )
-}
 
 
 
@@ -72,9 +67,9 @@ function Projects1() {
             <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center">
                
-                <div className = "col ">
-                    <Card className={useStyles().border} style={{ width: '30rem' }} >
-                            <CardImg   height="350" src="/assets/images/project-house.png" alt="image"/>
+                <div className = "col gap">
+                    <Card className={useStyles().border} style={{ width: '30' }}  >
+                            <CardImg   height="400" src="/assets/images/project-house.png" alt="image"/>
                             <CardBody  className={useStyles().root} >
                             
                                 <CardTitle>Real Estate Search App</CardTitle>
@@ -89,9 +84,9 @@ function Projects1() {
                             </CardBody>
                     </Card>
                 </div>
-                <div className = "col ">
-                    <Card className={useStyles().border} style={{ width: '30rem' }} >
-                            <CardImg  height="350" src="/assets/images/project-hawaii.png" alt="image"/>
+                <div className = "col gap">
+                    <Card className={useStyles().border} style={{ width: '30' }} >
+                            <CardImg  height="400" src="/assets/images/project-hawaii.png" alt="image"/>
                             <CardBody   className={useStyles().root} >
                             
                                 <CardTitle>Hawaii Travel</CardTitle>
@@ -117,9 +112,9 @@ function Projects2() {
         <div className="container" align="center">
         
         <div className ="row justify-content-center">
-            <div className = "col ">
-                <Card className={useStyles().border} style={{ width: '30rem' }} >
-                <CardImg  height="350"  src="/assets/images/project-todolist.png" alt="image"/>
+            <div className = "col gap">
+                <Card className={useStyles().border} style={{ width: '20' }} >
+                <CardImg  height="400"  src="/assets/images/project-todolist.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>To Do List Mobile App</CardTitle>
@@ -134,9 +129,9 @@ function Projects2() {
                         </CardBody>
                 </Card>
             </div>
-            <div className = "col ">
-                <Card className={useStyles().border} style={{ width: '30rem' }} >
-                <CardImg  height="350"  src="/assets/images/project-drum.png" alt="image"/>
+            <div className = "col gap">
+                <Card className={useStyles().border} style={{ width: '30' }} >
+                <CardImg  height="400"  src="/assets/images/project-drum.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Drum Game</CardTitle>
@@ -161,15 +156,15 @@ function Projects3() {
     return (
         <div className="container" align="center">
         <div className ="row justify-content-center">
-            <div className = "col ">
-                <Card className={useStyles().border} style={{ width: '30rem' }} >
-                <CardImg  height="350"  src="/assets/images/project-nucamp.png" alt="image"/>
+            <div className = "col gap">
+                <Card className={useStyles().border} style={{ width: '30' }} >
+                <CardImg  height="400"  src="/assets/images/project-nucamp.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Nucamp Project</CardTitle>
                       
                             <CardText>
-                                <span> This project was based on ReactJS and Redux. The github was set up in branches to record every step of the development.  </span>
+                                <span> This project was developed with ReactJS as well as Redux. The github was set up in branches to record every step of the development.  </span>
                             </CardText>
                             <br />
                             <a target="_blank" href="https://nucamp-website.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
@@ -178,9 +173,10 @@ function Projects3() {
                         </CardBody>
                 </Card>
             </div>
-            <div className = "col ">
-                <Card className={useStyles().border} style={{ width: '30rem' }} >
-                <CardImg  height="350"  src="/assets/images/project-portfolio1.png" alt="image"/>
+            
+            <div className = "col gap">
+                <Card className={useStyles().border} style={{ width: '30' }} >
+                <CardImg  height="400"  src="/assets/images/project-portfolio1.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Portfolio Website</CardTitle>
@@ -235,13 +231,14 @@ function Contactme() {
                 </div>
                 <div className="row" >
                     <div className="col" align='center'>
-                        <a role="button" className="btn extraBtn"  href="tel:+12063838906"> 1-206-383-8906 </a><br />
+                        <a role="button" className="btn extraBtn d-none d-md-block"  href="tel:+12063838906"> 1-206-383-8906 </a><br />
+                        {/* d-none d-md-block is to hide this text when the screen is xs or sm, after md the text will be shown */}
                     </div>
                     <div className="col" align="center">
-                        <a role="button" className="btn extraBtn"  href="mailto: chaohg@hotmail.com">chaohg@hotmail.com </a>
+                        <a role="button" className="btn extraBtn d-none d-md-block"  href="mailto: chaohg@hotmail.com">chaohg@hotmail.com </a>
                     </div>
                     <div className="col" align="center">
-                        <a role="button" className="btn extraBtn" href="https://github.com/chaohg">https://github.com/chaohg </a>
+                        <a role="button" className="btn extraBtn d-none d-md-block" href="https://github.com/chaohg">https://github.com/chaohg </a>
                     </div>
                 </div>
                 
@@ -253,8 +250,7 @@ function Contactme() {
 
 
 function Presenter () {
-    const FadeUp = batch(Move());
-  
+   
     return (
       <div>
         
@@ -271,19 +267,17 @@ function Presenter () {
        
         <Aboutme />
         <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/>
-        <Certificate1/>
-        <br/> <br/>
-        <Certificate2/>
-        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        
         <Projects1/>
-        <br/> <br/>
+        
         <Projects2/>
-        <br/> <br/>
+        
         <Projects3/>
         <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        <Certificate/>        
+        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
         <Contactme />
-        <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-           
+        <br/> <br/><br/> <br/> <br/><br/> <br/>
      </div>
     );
   };
