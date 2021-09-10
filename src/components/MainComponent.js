@@ -11,7 +11,7 @@ function Aboutme() {
     <div className="container gapaboutme" align="center">
          <span className="title" style={{ fontSize: "2.5em" }} >About me </span>
          <br/><br /> <br /><br/><br /> <br />
-         <span style={{ fontSize: "1.5em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
+         <span  style={{ fontSize: "1.5em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
         
     </div>
     )
@@ -24,32 +24,32 @@ function Certificate() {
         <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
         <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center ">
-                <div className = "col-md-4 gap">
+                <div className = "col-md-3 m-5">
                     <Card >
-                            <CardImg   height="450vw" src="/assets/images/React Course Certificate.jpg" alt="image"/>
+                            <CardImg   width='100%' src="/assets/images/React Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
                 
-                <div className = "col-md-4 gap">
+                <div className = "col-md-3 m-5">
                     <Card >
-                            <CardImg   height="450vw" src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
+                            <CardImg   width='100%' src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
-                <div className = "col-md-4 gap">
+                <div className = "col-md-3 m-5">
                     <Card  >
-                            <CardImg   height="450vw" src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
+                            <CardImg   width='100%' src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
             </div>
             <div className ="row justify-content-center">
-                <div className = "col-md-4 gap ">
+                <div className = "col-md-4 m-5">
                     <Card >
-                            <CardImg   height="450" src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
+                            <CardImg  width='100%' src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
                     </Card>
                 </div>
-                <div className = "col-md-4 gap">
+                <div className = "col-md-4 m-5">
                     <Card >
-                            <CardImg   height="450" src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
+                            <CardImg  width='100%' src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
                     </Card>
                 </div>
             </div>
@@ -67,9 +67,9 @@ function Projects() {
             <br/><br /> <br /><br/><br /><br/>
             <div className ="row justify-content-center">
                
-                <div className = "col gap">
+                <div className = "col m-2">
                     <Card className={useStyles().border} style={{ width: '30' }}  >
-                            <CardImg   height="400" src="/assets/images/project-house.png" alt="image"/>
+                            <CardImg   height='400vw' src="/assets/images/project-house.png" alt="image"/>
                             <CardBody  className={useStyles().root} >
                             
                                 <CardTitle>Real Estate Search App</CardTitle>
@@ -84,9 +84,9 @@ function Projects() {
                             </CardBody>
                     </Card>
                 </div>
-                <div className = "col gap">
+                <div className = "col m-2">
                     <Card className={useStyles().border} style={{ width: '30' }} >
-                            <CardImg  height="400" src="/assets/images/project-hawaii.png" alt="image"/>
+                            <CardImg  height='400vw' src="/assets/images/project-hawaii.png" alt="image"/>
                             <CardBody   className={useStyles().root} >
                             
                                 <CardTitle>Hawaii Travel</CardTitle>
@@ -104,9 +104,9 @@ function Projects() {
                 
             </div>
             <div className ="row justify-content-center">
-            <div className = "col gap">
+            <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '20' }} >
-                <CardImg  height="400"  src="/assets/images/project-todolist.png" alt="image"/>
+                <CardImg height='400vw' src="/assets/images/project-todolist.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>To Do List Mobile App</CardTitle>
@@ -121,9 +121,9 @@ function Projects() {
                         </CardBody>
                 </Card>
             </div>
-            <div className = "col gap">
+            <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height="400"  src="/assets/images/project-drum.png" alt="image"/>
+                <CardImg  height='400vw'  src="/assets/images/project-drum.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Drum Game</CardTitle>
@@ -139,9 +139,9 @@ function Projects() {
             </div>
           </div>
           <div className ="row justify-content-center">
-            <div className = "col gap">
+            <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height="400"  src="/assets/images/project-nucamp.png" alt="image"/>
+                <CardImg  height='400vw'  src="/assets/images/project-nucamp.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Nucamp Project</CardTitle>
@@ -157,9 +157,9 @@ function Projects() {
                 </Card>
             </div>
             
-            <div className = "col gap">
+            <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height="400"  src="/assets/images/project-portfolio1.png" alt="image"/>
+                <CardImg height='400vw'  src="/assets/images/project-portfolio1.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
                             <CardTitle>Portfolio Website</CardTitle>
@@ -239,8 +239,8 @@ function Presenter () {
         
             <Zoom>  
             <div align="center" >
-                <span style={{ fontSize: "2.5em" }}>Hi, I'm </span> <span style={{fontSize: "3.5em", color:"#800000"}}>Minchao Duclos </span> <br /> 
-                <span style={{ fontSize: "2.5em" }}>a Developer & Designer</span>
+                <span style={{ fontSize: "2.5rem" }}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"#800000"}}>Minchao Duclos </span> <br /> 
+                <span style={{ fontSize: "2.5rem" }}>a Developer & Designer</span>
                 <br/><br/><br/>
                 <AnimationText />
             </div>
@@ -302,12 +302,13 @@ function Presenter () {
      render() {
          return (
             <div >
-                <div class="bg"></div>
-                <div class="bg bg2"></div>
-                <div class="bg bg3"></div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div className="bg"></div>
+                <div className="bg bg2"></div>
+                <div className="bg bg3"></div>
+                <div className='presenter'>
                 <Presenter />
-                <div class="arrow">
+                </div>
+                <div className="arrow">
                 <span></span>
                 <span></span>
                 <span></span>

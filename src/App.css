@@ -18,6 +18,7 @@ h1, h2, h3{
   text-decoration: underline;
   text-decoration-line: overline;
   text-decoration-color: rgba(182, 22, 16);
+
 }
 
 .card-title{
@@ -133,17 +134,22 @@ h1, h2, h3{
   size:"lg" 
 }
 .gap{
-  padding:1rem
+  padding:30rem;
+
 }
 
 .maingap{
-  padding: 15rem 0 5rem 0
+  padding: 15rem 0 10rem 0
 }
 
 .gapaboutme{
-  padding: 40rem 0 0 0
+  padding: 30rem 0 0 0
 }
 
 .gapproject{
   padding:2rem 0 0 0
+}
+
+.presenter{
+  padding-top:10vw
 }
