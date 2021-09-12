@@ -9,8 +9,9 @@ import { makeStyles } from '@material-ui/core/styles';
 function Aboutme() {
     return (
     <div className="container gapaboutme" align="center">
-         <span className="title" style={{ fontSize: "2.5em" }} >About me </span>
-         <br/><br /> <br /><br/><br /> <br />
+        <div className='pb-5 mb-5 '>
+           <span className="title" style={{ fontSize: "2.5em" }} >About me </span>
+        </div>
          <span  style={{ fontSize: "1.5em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
         
     </div>
@@ -21,8 +22,9 @@ function Aboutme() {
 function Certificate() {
     return (
         <div className="container maingap" align="center">
-        <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
-        <br/><br /> <br /><br/><br /><br/>
+        <div className='pb-5 mb-5 '>
+            <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
+        </div>
             <div className ="row justify-content-center ">
                 <div className = "col-md-3 m-5">
                     <Card >
@@ -63,8 +65,9 @@ function Certificate() {
 function Projects() {
     return (
         <div className="container maingap " align="center">
-            <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
-            <br/><br /> <br /><br/><br /><br/>
+            <div className='pb-5 mb-5 '>
+                <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
+            </div>
             <div className ="row justify-content-center">
                
                 <div className = "col m-2">
@@ -198,9 +201,9 @@ class AnimationText extends Component {
 function Contactme() {
     return(
         <div className="container maingap" align="center">
-            <span className="title" style={{ fontSize: "2.5em" }} >Contact Me </span>
-            <br/><br /> <br /><br/><br /> <br />
-           
+                <div className='pb-5 mb-5 '>
+                    <span className="title " style={{ fontSize: "2.5em" }} >Contact Me </span>
+                </div>
                 <div className="row" >
                     <div className="col" align="center">
                         <a role="button" className="btn" href="tel:+12063838906"><i className="fa fa-phone-square extraIcon" ></i> </a>
@@ -214,7 +217,7 @@ function Contactme() {
                 </div>
                 <div className="row" >
                     <div className="col" align='center'>
-                        <a role="button" className="btn extraBtn d-none d-md-block"  href="tel:+12063838906"> 1-206-383-8906 </a><br />
+                        <a role="button" className="btn extraBtn d-none d-md-block"  href="tel:+12063838906"> 1-206-383-8906 </a>
                         {/* d-none d-md-block is to hide this text when the screen is xs or sm, after md the text will be shown */}
                     </div>
                     <div className="col" align="center">
@@ -239,9 +242,10 @@ function Presenter () {
         
             <Zoom>  
             <div align="center" >
-                <span style={{ fontSize: "2.5rem" }}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"#800000"}}>Minchao Duclos </span> <br /> 
-                <span style={{ fontSize: "2.5rem" }}>a Developer & Designer</span>
-                <br/><br/><br/>
+                <div className='mb-5 pb-5'>
+                    <span style={{ fontSize: "2.5rem" }}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"#800000"}}>Minchao Duclos</span> <br/>
+                    <span style={{ fontSize: "2.5rem" }}>a Developer & Designer</span>
+                </div>
                 <AnimationText />
             </div>
             </Zoom>
@@ -263,9 +267,9 @@ function Presenter () {
 //           <Animator  animation={FadeUp}>
 //             <Zoom>  
 //             <div align="center" >
-//                 <span style={{ fontSize: "3em" }}>Hi, I'm </span> <span style={{fontSize: "4em", color:"#800000"}}>Minchao Duclos </span> <br /> 
+//                 <span style={{ fontSize: "3em" }}>Hi, I'm </span> <span style={{fontSize: "4em", color:"#800000"}}>Minchao Duclos </span>
 //                 <span style={{ fontSize: "3em" }}>a Developer & Designer</span>
-//                 <br/><br/><br/>
+//            
 //                 <AnimationText />
 //             </div>
 //             </Zoom>
@@ -276,21 +280,14 @@ function Presenter () {
 //                 <Aboutme />
 //             </Animator>    
 //         </ScrollPage>
-//         <br/> <br/> <br/> <br/> <br/>
 //         <Certificate1/>
-//         <br/>
 //         <Certificate2/>
-//         <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
 //         <Projects1/>
-//         <br/> <br/>
 //         <Projects2/>
-//         <br/> <br/>
 //         <Projects3/>
-//         <br/> <br/>
 //         <ScrollPage page={7}>
 //             <Animator  animation={FadeUp}>
-//                 <br /> <br /> <br /> <br /> <br />
-//                 <Contactme />
+//             <Contactme />
 //             </Animator>
 //         </ScrollPage>
 //     </ScrollContainer>
