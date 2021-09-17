@@ -167,7 +167,7 @@ function Projects() {
                 <CardImg  height='400vw'  src="/assets/images/project-clock.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
-                            <CardTitle>Nucamp Project</CardTitle>
+                            <CardTitle>Current Time Project</CardTitle>
                       
                             <CardText>
                                 <span> This is a little fun project! I was able to build an app to show current time with second, minute and hour hands on a working clock.  </span>
