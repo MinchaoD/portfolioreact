@@ -56,6 +56,7 @@ h1, h2, h3{
   animation-duration:17s;
 }
 
+
 @keyframes slide {
   0% {
     transform:translateX(-25%);

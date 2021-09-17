@@ -68,7 +68,7 @@ function Projects() {
             <div className='pb-5 mb-5 '>
                 <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
             </div>
-            <div className ="row justify-content-center">
+            <div className ="row mb-4 justify-content-center">
                
                 <div className = "col m-2">
                     <Card className={useStyles().border} style={{ width: '30' }}  >
@@ -106,7 +106,7 @@ function Projects() {
                 </div>
                 
             </div>
-            <div className ="row justify-content-center">
+            <div className ="row mb-4 justify-content-center">
             <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '20' }} >
                 <CardImg height='400vw' src="/assets/images/project-todolist.png" alt="image"/>
@@ -126,22 +126,24 @@ function Projects() {
             </div>
             <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height='400vw'  src="/assets/images/project-drum.png" alt="image"/>
+                <CardImg  height='400vw'  src="/assets/images/project-space.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
                         
-                            <CardTitle>Drum Game</CardTitle>
+                            <CardTitle>Spacestagram</CardTitle>
                       
                             <CardText>
-                                <span> This is a fun little project! I used Vanilla JavaScript to create a Drum Playing Game. The drum can be played by both key press and mouse click. </span>
+                                <span> This is a projected developed with ReactJS, getting data from NASA API. The user can pick the dates to render different information. </span>
                             </CardText>
-                            <a target="_blank" href="https://drum-game-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://spacestagram-duclos.netlify.app/" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
-                            <a target="_blank" href="https://github.com/chaohg/drum" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                            <a target="_blank" href="https://github.com/chaohg/spacestagram" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
             </div>
           </div>
           <div className ="row justify-content-center">
+        
+
             <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
                 <CardImg  height='400vw'  src="/assets/images/project-nucamp.png" alt="image"/>
@@ -153,14 +155,32 @@ function Projects() {
                                 <span> This project was developed with ReactJS as well as Redux. The github was set up in branches to record every step of the development.  </span>
                             </CardText>
                         
-                            <a target="_blank" href="https://nucamp-website.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                            <a target="_blank" href="https://nucamp-website.netlify.app/" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
                            
                             <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
             </div>
-            
+
             <div className = "col m-2">
+                <Card className={useStyles().border} style={{ width: '30' }} >
+                <CardImg  height='400vw'  src="/assets/images/project-clock.png" alt="image"/>
+                        <CardBody  className={useStyles().root} >
+                        
+                            <CardTitle>Nucamp Project</CardTitle>
+                      
+                            <CardText>
+                                <span> This is a little fun project! I was able to build an app to show current time with second, minute and hour hands on a working clock.  </span>
+                            </CardText>
+                        
+                            <a target="_blank" href="https://clock-currenttime.netlify.app/" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
+                           
+                            <a target="_blank" href="https://github.com/chaohg/clock-currenttime" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
+                        </CardBody>
+                </Card>
+            </div>
+            
+            {/* <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
                 <CardImg height='400vw'  src="/assets/images/project-portfolio1.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
@@ -176,7 +196,7 @@ function Projects() {
                             <a target="_blank" href="https://github.com/chaohg/portfolio" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
-            </div>
+            </div> */}
           </div>
    </div>
  )
