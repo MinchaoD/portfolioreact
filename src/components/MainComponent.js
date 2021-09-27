@@ -17,7 +17,7 @@ function Aboutme() {
         </div>
         <div align='left'>
             <ScrollAnimation animateIn="fadeIn">
-                <span  style={{ fontSize: "1.5em"}}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
+                <span  style={{ fontSize: "1.5em", color:'#585858' }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: </span> <span  style={{ fontSize: "1.5em", color:'black' }}>HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more.</span><span  style={{ fontSize: "1.5em", color:'#585858' }}> I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
             </ScrollAnimation >
         </div>
     </div>
@@ -27,11 +27,11 @@ function Aboutme() {
 
 function Certificate() {
     return (
-        <div className="container maingap" align="center">
+      <div className="container certificategap" align="center">
         <div className='pb-5 mb-5 '>
-        <ScrollAnimation animateIn='fadeIn'>
-            <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
-        </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeIn'>
+                <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
+            </ScrollAnimation>
         </div>
             <div className ="row justify-content-center ">
                 <div className = "col-md-3 m-5">
@@ -66,7 +66,7 @@ function Certificate() {
                     </ScrollAnimation>
                 </div>
                 <div className = "col-md-4 m-5">
-                <   ScrollAnimation animateIn='fadeIn'>
+                    <ScrollAnimation animateIn='fadeIn'>
                         <Card >
                                 <CardImg  width='100%' src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
                         </Card>
@@ -84,8 +84,46 @@ function Projects() {
     return (
         <div className="container maingap " align="center">
             <div className='pb-5 mb-5 '>
-                <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
+                <ScrollAnimation animateIn='fadeIn' >
+                    <span className="title" style={{ fontSize: "2.5em" }} >Projects </span>
+                </ScrollAnimation>
             </div>
+            <div className='parent'>
+                <div className = 'row '>
+                       <a target="_blank" href="https://hawaii-travel-2021.netlify.app"> <img className='image1' src='/assets/images/project hawaii.png' alt="project hawaii" /> </a>
+                  
+                </div>
+                <div className = 'row content1'  >
+                    <p style={{ fontSize: "2em" }} >Hawaii Travel</p>
+                    <p style={{ fontSize:'1.2em', color:'#787878' }} >Solo Project (from design to deployment)</p>
+                    <p style={{ fontSize: "1.5em" }} >HTML | CSS | BootStrap | Javascript</p>
+                    <p style={{color:'#787878'}}>For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</p>
+                    <div>
+                        <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none" }} > <Button className="btn-project" style={{margin:'20px'}} >Demo</Button></a>
+                        <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}} > <Button className="btn-project" style={{margin:'20px'}}>Code</Button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div className='parent'>
+                <div className = 'row '>
+                       <a target="_blank" href="https://realestate-search.netlify.app"> <img className='image2' src='/assets/images/project real estate.png' alt="project real estate" /> </a>
+                  
+                </div>
+                <div className = 'row content2'  >
+                    <p style={{ fontSize: "2em" }} >Real Estate Search App</p>
+                    <p style={{ fontSize:'1.2em', color:'#787878' }} >Solo Project (from design to deployment)</p>
+                    <p style={{ fontSize: "1.5em" }} >React | ReactStrap | JavaScript | CSS</p>
+                    
+                    <p style={{color:'#787878'}}>I used ReactJS to develope this website, fetching from an API and rendering the search results with Google maps, virtual tours and many more detail information for each property.</p>
+                    <div>
+                        <a target="_blank" href="https://realestate-search.netlify.app" style={{textDecoration : "none" }} > <Button className="btn-project" style={{margin:'20px'}} >Demo</Button></a>
+                        <a target="_blank" href="https://www.loom.com/share/62f733b1a9ad4d3aabe0e3625b3022e2" style={{textDecoration : "none"}}> <Button className="btn-project" style={{margin:'20px'}}>Video</Button></a>
+                        <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}} > <Button className="btn-project" style={{margin:'20px'}}>Code</Button></a>
+                    </div>
+                </div>
+            </div>
+{/*         
             <div className ="row mb-4 justify-content-center">
                
                 <div className = "col m-2">
@@ -158,10 +196,8 @@ function Projects() {
                         </CardBody>
                 </Card>
             </div>
-          </div>
-          <div className ="row justify-content-center">
-        
-
+          </div> */}
+          {/* <div className ="row justify-content-center">
             <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
                 <CardImg  height='400vw'  src="/assets/images/project-nucamp.png" alt="image"/>
@@ -178,9 +214,9 @@ function Projects() {
                             <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
-            </div>
+            </div> */}
 
-            <div className = "col m-2">
+            {/* <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
                 <CardImg  height='400vw'  src="/assets/images/project-clock.png" alt="image"/>
                         <CardBody  className={useStyles().root} >
@@ -196,7 +232,7 @@ function Projects() {
                             <a target="_blank" href="https://github.com/chaohg/clock-currenttime" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
                         </CardBody>
                 </Card>
-            </div>
+            </div> */}
             
             {/* <div className = "col m-2">
                 <Card className={useStyles().border} style={{ width: '30' }} >
@@ -215,8 +251,7 @@ function Projects() {
                         </CardBody>
                 </Card>
             </div> */}
-          </div>
-   </div>
+        </div>
  )
 }  
 
@@ -291,8 +326,8 @@ function Presenter () {
             <Zoom>  
             <div align="center" >
                 <div className='mb-5 pb-5'>
-                    <span style={{ fontSize: "2.5rem" ,color:'#686868'}}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"black"}}>Minchao Duclos</span> <br/>
-                    <span style={{ fontSize: "2.5rem", color:'#686868' }}>a Developer & Designer</span>
+                    <span style={{ fontSize: "2.5rem" ,color:'#585858'}}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"black"}}>Minchao Duclos</span> <br/>
+                    <span style={{ fontSize: "2.5rem", color:'#585858' }}>a Developer & Designer</span>
                 </div>
                 <AnimationText />
             </div>
