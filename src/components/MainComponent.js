@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import Zoom from 'react-reveal/Zoom';
-import { Animator, ScrollContainer, ScrollPage, batch, Move} from "react-scroll-motion";
 import Typical from 'react-typical';
 import { Card, CardImg, CardTitle, CardText, CardBody, Button} from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 
 function Aboutme() {
     return (
-    <div className="container gapaboutme" align="center">
-        <div className='pb-5 mb-5 '>
-           <span className="title" style={{ fontSize: "2.5em" }} >About me </span>
+    <div className="container gapaboutme" >
+        <div className='pb-5 mb-5 ' align='center'>
+            <ScrollAnimation animateIn='fadeIn'>
+            <span className="title" style={{ fontSize: "2.5em"}} >About me </span>
+            </ScrollAnimation>
         </div>
-         <span  style={{ fontSize: "1.5em" }}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
-        
+        <div align='left'>
+            <ScrollAnimation animateIn="fadeIn">
+                <span  style={{ fontSize: "1.5em"}}>I'm a Front End / Full Stack developer, and I love to code. I enjoy the happiness of building cool and user friendly websites, apps and games. My skills include: HTML, CSS, BootStrap, Javascript, ReactJS, Redux, Rest API, React Native, NodeJS, Express, Python, MongoDB, MySQL and more. I have a Master's degree, and Full Stack Web and Mobile Development certificate of Honor from Nucamp. </span>
+            </ScrollAnimation >
+        </div>
     </div>
     )
     
@@ -23,36 +29,48 @@ function Certificate() {
     return (
         <div className="container maingap" align="center">
         <div className='pb-5 mb-5 '>
+        <ScrollAnimation animateIn='fadeIn'>
             <span className="title" style={{ fontSize: "2.5em" }} >Certificates </span>
+        </ScrollAnimation>
         </div>
             <div className ="row justify-content-center ">
                 <div className = "col-md-3 m-5">
-                    <Card >
-                            <CardImg   width='100%' src="/assets/images/React Course Certificate.jpg" alt="image"/>
-                    </Card>
-                </div>
-                
-                <div className = "col-md-3 m-5">
-                    <Card >
-                            <CardImg   width='100%' src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
-                    </Card>
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <Card >
+                                <CardImg   width='100%' src="/assets/images/React Course Certificate.jpg" alt="image"/>
+                        </Card>
+                    </ScrollAnimation>
                 </div>
                 <div className = "col-md-3 m-5">
-                    <Card  >
-                            <CardImg   width='100%' src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
-                    </Card>
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <Card >
+                                <CardImg   width='100%' src="/assets/images/React Native Course Certificate.jpg" alt="image"/>
+                        </Card>
+                    </ScrollAnimation>
                 </div>
+                <div className = "col-md-3 m-5">
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <Card  >
+                                <CardImg   width='100%' src="/assets/images/Backend Course Certificate.jpg" alt="image"/>
+                        </Card>
+                    </ScrollAnimation>
+                </div>
+            
             </div>
             <div className ="row justify-content-center">
                 <div className = "col-md-4 m-5">
-                    <Card >
-                            <CardImg  width='100%' src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
-                    </Card>
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <Card >
+                                <CardImg  width='100%' src="/assets/images/Front End Web and Mobile Development Certificate.jpg" alt="image"/>
+                        </Card>
+                    </ScrollAnimation>
                 </div>
                 <div className = "col-md-4 m-5">
-                    <Card >
-                            <CardImg  width='100%' src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
-                    </Card>
+                <   ScrollAnimation animateIn='fadeIn'>
+                        <Card >
+                                <CardImg  width='100%' src="/assets/images/Full Stack Web and Mobile Development Certificate with Honor.jpg" alt="image"/>
+                        </Card>
+                   </ScrollAnimation>
                 </div>
             </div>
         </div>
@@ -222,34 +240,45 @@ function Contactme() {
     return(
         <div className="container maingap" align="center">
                 <div className='pb-5 mb-5 '>
-                    <span className="title " style={{ fontSize: "2.5em" }} >Contact Me </span>
+                    <ScrollAnimation animateIn='fadeIn'>
+                        <span className="title " style={{ fontSize: "2.5em" }} >Contact Me </span>
+                    </ScrollAnimation>
                 </div>
                 <div className="row" >
                     <div className="col" align="center">
-                        <a role="button" className="btn" href="tel:+12063838906"><i className="fa fa-phone-square extraIcon" ></i> </a>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <a role="button " className="btn" href="tel:+12063838906"><i className="fa fa-phone-square extraIcon" ></i> </a>
+                        </ScrollAnimation>
                     </div>
                     <div className="col" align="center">
-                    <a role="button" className="btn" href="mailto: chaohg@hotmail.com"><i className="fa fa-envelope-square extraIcon"></i> </a>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <a role="button" className="btn" href="mailto: chaohg@hotmail.com"><i className="fa fa-envelope-square extraIcon"></i> </a>
+                        </ScrollAnimation>
                     </div>
                     <div className="col" align="center">
-                    <a role="button" className="btn" href="https://github.com/chaohg"> <i className="fa fa-github extraIcon"></i></a>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <a role="button" className="btn" href="https://github.com/chaohg"> <i className="fa fa-github extraIcon"></i></a>
+                        </ScrollAnimation>
                     </div>
                 </div>
                 <div className="row" >
                     <div className="col" align='center'>
-                        <a role="button" className="btn extraBtn d-none d-md-block"  href="tel:+12063838906"> 1-206-383-8906 </a>
-                        {/* d-none d-md-block is to hide this text when the screen is xs or sm, after md the text will be shown */}
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <a role="button" className="btn extraBtn d-none d-md-block"  href="tel:+12063838906"> 1-206-383-8906 </a>
+                            {/* d-none d-md-block is to hide this text when the screen is xs or sm, after md the text will be shown */}
+                        </ScrollAnimation>
                     </div>
                     <div className="col" align="center">
-                        <a role="button" className="btn extraBtn d-none d-md-block"  href="mailto: chaohg@hotmail.com">chaohg@hotmail.com </a>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <a role="button" className="btn extraBtn d-none d-md-block"  href="mailto: chaohg@hotmail.com">chaohg@hotmail.com </a>
+                        </ScrollAnimation>
                     </div>
                     <div className="col" align="center">
-                        <a role="button" className="btn extraBtn d-none d-md-block" href="https://github.com/chaohg">https://github.com/chaohg </a>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <a role="button" className="btn extraBtn d-none d-md-block" href="https://github.com/chaohg">https://github.com/chaohg </a>
+                        </ScrollAnimation>
                     </div>
                 </div>
-                
-       
-            
         </div>
     )
 }
@@ -259,62 +288,23 @@ function Presenter () {
    
     return (
       <div>
-        
             <Zoom>  
             <div align="center" >
                 <div className='mb-5 pb-5'>
-                    <span style={{ fontSize: "2.5rem" }}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"#800000"}}>Minchao Duclos</span> <br/>
-                    <span style={{ fontSize: "2.5rem" }}>a Developer & Designer</span>
+                    <span style={{ fontSize: "2.5rem" ,color:'#686868'}}>Hi, I'm </span> <span style={{fontSize: "3rem", color:"black"}}>Minchao Duclos</span> <br/>
+                    <span style={{ fontSize: "2.5rem", color:'#686868' }}>a Developer & Designer</span>
                 </div>
                 <AnimationText />
             </div>
             </Zoom>
-        <Aboutme />
-        <Projects/>
-        <Certificate />        
-        <Contactme />
+            <Aboutme />
+            <Projects/>
+            <Certificate />        
+            <Contactme />
      </div>
     );
   };
 
-
-//   function Presenter () {
-//     const FadeUp = batch(Move());
-  
-//     return (
-//       <ScrollContainer >
-//         <ScrollPage page={0} >
-//           <Animator  animation={FadeUp}>
-//             <Zoom>  
-//             <div align="center" >
-//                 <span style={{ fontSize: "3em" }}>Hi, I'm </span> <span style={{fontSize: "4em", color:"#800000"}}>Minchao Duclos </span>
-//                 <span style={{ fontSize: "3em" }}>a Developer & Designer</span>
-//            
-//                 <AnimationText />
-//             </div>
-//             </Zoom>
-//           </Animator>
-//         </ScrollPage>
-//         <ScrollPage page={1}>
-//             <Animator  animation={FadeUp}>
-//                 <Aboutme />
-//             </Animator>    
-//         </ScrollPage>
-//         <Certificate1/>
-//         <Certificate2/>
-//         <Projects1/>
-//         <Projects2/>
-//         <Projects3/>
-//         <ScrollPage page={7}>
-//             <Animator  animation={FadeUp}>
-//             <Contactme />
-//             </Animator>
-//         </ScrollPage>
-//     </ScrollContainer>
-//     );
-//   };
-
- 
  class Main extends Component {
      render() {
          return (

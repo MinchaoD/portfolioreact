@@ -18,7 +18,6 @@ h1, h2, h3{
   text-decoration: underline;
   text-decoration-line: overline;
   text-decoration-color: rgba(182, 22, 16);
-
 }
 
 .card-title{
@@ -106,6 +105,10 @@ h1, h2, h3{
   font-size:60px; 
 }
 
+.extraIcon:hover {
+  color:gray
+}
+
 .extraBtn{ 
   font-size:1.5vw; 
   font-weight:800;
@@ -153,4 +156,18 @@ h1, h2, h3{
 
 .presenter{
   padding-top:10vw
+}
+
+.fadeIn {
+	animation: fadeIn 6s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
 }
