@@ -16,7 +16,7 @@ h2{
 .title{
   text-decoration: underline;
   text-decoration-line: overline;
-  text-decoration-color: rgba(182, 22, 16);
+  text-decoration-color: #FF8C00;
 }
 
 .card-title{
@@ -127,9 +127,9 @@ h2{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border:5px ridge rgb(182, 22, 16);
+  border:5px ridge #FF8C00;
   cursor: pointer;
-  box-shadow: 0 40px 35px 0 rgba(16, 39, 112, .25);
+  box-shadow: 0 10px 15px 0 rgba(16, 39, 112, .25);
   outline: 1;
   text-transform: capitalize;
   size:"lg" 
@@ -142,10 +142,6 @@ h2{
 
 .maingap{
   padding: 15rem 0 10rem 0
-}
-
-.certificategap{
-  padding: 500rem 0 0 0
 }
 
 .gapaboutme{
@@ -176,38 +172,56 @@ h2{
 }
 
 
+.fadeOut {
+	animation: fadeOut 6s;
+  opacity: 0;
+}
+
+
+@keyframes fadeIn {
+  from {
+  	opacity: 1;
+  }
+  to {
+ 	opacity: 0;
+  }
+}
+
+/* 
 .image1 {
   transition: filter 1s ease-in-out;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
-.image1:hover {
+.parent:hover .image1{
   filter: blur(0px);
   -webkit-filter: blur(0px);
 }
+ */
 
 .image2 {
-  transition: filter 1s ease-in-out;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-}
-
-.image2:hover {
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-}
-
-/* .image1 {
   transition: filter 2s ease-in-out;
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
 }
 
-.image1:hover {
+/* below code is to change the image1 when hovering parent area */
+.parent:hover .image2 {
   -webkit-filter: grayscale(0%); 
   filter: grayscale(0%);
-} */
+}
+
+.image1 {
+  transition: filter 2s ease-in-out;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+.parent:hover .image1 {
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%);
+}
 
 
 .parent{
@@ -216,41 +230,51 @@ h2{
   left: 0;
   align-self: center;
   padding-bottom: 60rem;
-
+  justify-self: center;
+  justify-content: center;
 }
 
 .image1 {
   width: 100%;
-  max-width:50rem;
+  max-width:35rem;
   height: 50rem;
-  object-fit: contain;
+  object-fit: fill;
   position: absolute;
-  top: 3rem;
   left: 0rem;
   z-index: 1;
 }
 
 .image2 {
   width: 100%;
-  max-width:50rem;
+  max-width:35rem;
   height:50rem;
-  object-fit: contain;
+  object-fit: fill;
   position: absolute;
-  top: 3rem;
   right: 0rem;
   z-index: 1;
 }
 
+.image3 {
+  width: 100%;
+  max-width:35rem;
+  height:50rem;
+  object-fit: contain;
+  position: absolute;
+  right: 0rem;
+  z-index: 1;
+}
 
 .content1{
+  margin-left: auto;
+  margin-right: auto;
   width:100%;
+  width:auto;
   max-width: 35rem;
-
   background-color: white;
   color: black;
   position: absolute;
-  top: 15rem;
-  left:40rem;
+  top: 25%;
+  right:0rem;
   border: 1px solid #000000;
   border-radius: 3%;
   z-index: 2;
@@ -260,14 +284,16 @@ h2{
 }
 
 .content2{
+  margin-left: auto;
+  margin-right: auto;
   width:100%;
+  width:auto;
   max-width: 35rem;
- 
   background-color: white;
   color: black;
   position: absolute;
-  top: 15rem;
-  right:40rem;
+  top: 25%;
+  left: 0rem;
   border: 1px solid #000000;
   border-radius: 3%;
   z-index: 2;
@@ -276,22 +302,3 @@ h2{
   padding:10px;
 }
 
-
-@media screen and (max-width: 1200px) {
-  .content1 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 50rem;
-    left: 0%;
-    top: 70vh
-    }
-  .content2 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width:50rem;
-    right: 0%;
-    top: 105vh
-    }
-}
