@@ -105,7 +105,8 @@ h2{
 }
 
 .extraIcon:hover {
-  color:gray
+  color:gray;
+  transform: scale(1.1)
 }
 
 .extraBtn{ 
@@ -161,7 +162,6 @@ h2{
   	opacity: 1;
 }
 
-
 @keyframes fadeIn {
   from {
   	opacity: 0;
@@ -171,13 +171,6 @@ h2{
   }
 }
 
-
-.fadeOut {
-	animation: fadeOut 6s;
-  opacity: 0;
-}
-
-
 @keyframes fadeOut {
   from {
   	opacity: 1;
@@ -186,6 +179,22 @@ h2{
  	opacity: 0;
   }
 }
+
+
+.grid{
+  position:relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  justify-content: center;
+  align-items:center;
+  height: auto;
+  justify-self: center;
+  padding: 120px 0;
+  margin:20px;
+
+}
+
 
 /* 
 .image1 {
@@ -200,22 +209,31 @@ h2{
 }
  */
 
-.image2 {
+.frame {
+  width: 100%;
+  overflow: hidden;
+}
+/* I have to create this frame class in order to get zoom effect with the same dimension of image box,
+the inside this frame, use same width as the one inside image1, and for the hover I do scale(1.1)
+here the overflow hidden is important, without this code, the zoom effect will be bigger than the image box */
+/* if we want to zoom out, meaning smaller but still the same image box, then we will have set the width/height under frame
+to be same as the width/height under the hover, and the image1 width/height will be set bigger than those */
+
+ .image1 {
+  width: 100%;
+  object-fit: fill;
+  z-index: 1;
   transition: filter 2s ease-in-out;
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
-/* below code is to change the image1 when hovering parent area */
-.parent:hover .image2 {
-  -webkit-filter: grayscale(0%); 
-  filter: grayscale(0%);
-}
-
-.image1 {
-  transition: filter 2s ease-in-out;
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
+.image1:hover {
+  transform: scale(1.2);
 }
 
 .parent:hover .image1 {
@@ -223,82 +241,126 @@ h2{
   filter: grayscale(0%);
 }
 
+/* line 235 is for when hover parent, the image1 changes, while  
+line 231 is when image1 hover, image1 changes */
 
-.parent{
-  position: relative;
-  top: 0;
-  left: 0;
-  align-self: center;
-  padding-bottom: 60rem;
-  justify-self: center;
-  justify-content: center;
-}
-
-.image1 {
-  width: 100%;
-  max-width:35rem;
-  height: 50rem;
-  object-fit: fill;
-  position: absolute;
-  left: 0rem;
-  z-index: 1;
-}
-
-.image2 {
-  width: 100%;
-  max-width:35rem;
-  height:50rem;
-  object-fit: fill;
-  position: absolute;
-  right: 0rem;
-  z-index: 1;
-}
 
 .image3 {
   width: 100%;
-  max-width:35rem;
-  height:50rem;
-  object-fit: contain;
-  position: absolute;
-  right: 0rem;
+  max-width:25rem;
+  object-fit: fill;
   z-index: 1;
+  transition: filter 2s ease-in-out;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.image3:hover {
+  transform: scale(1.2);
+}
+
+.parent:hover .image3 {
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%);
+}
+
+.content{
+  background-color: white;
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 3%;
+  z-index: 2;
+  width: auto;
+  justify-content: center;
+  align-items:center;
+  margin:10px;
 }
 
 .content1{
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-  width:auto;
-  max-width: 35rem;
   background-color: white;
   color: black;
-  position: absolute;
-  top: 25%;
-  right:0rem;
   border: 1px solid #000000;
   border-radius: 3%;
   z-index: 2;
+  width: auto;
   justify-content: center;
-  align-items: center;
-  padding:10px;
+  align-items:center;
+  margin:10px;
 }
 
-.content2{
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-  width:auto;
-  max-width: 35rem;
-  background-color: white;
-  color: black;
-  position: absolute;
-  top: 25%;
-  left: 0rem;
-  border: 1px solid #000000;
-  border-radius: 3%;
-  z-index: 2;
-  justify-content: center;
-  align-items: center;
-  padding:10px;
+.slide .grid > *:first-child{
+  animation: slideFromLeft 2s;
+  	opacity: 1;
+}
+.slide .grid > *:nth-child(2){
+  animation: slideFromRight 2s;
+  	opacity: 1;
+}
+/* this is grab first child which is on the left to slide from left  
+and grab 2nd child which is on the right to slide from right */
+
+@keyframes slideFromLeft{
+  
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/* this is to set the contact me portion to slide from left when scrolling */
+
+
+@keyframes slideFromRight{
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
+@media(max-width:768px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .image {grid-area:one}
+  .content1 {grid-area:two}
+
+  .project{
+    grid-template-areas: 
+    "one"
+    "two"
+  }
+    /* this is to switch the real estate image to be first then the content in the small screen,
+  because in html content was written before image, but in small screen we want them same as 
+  the hawaii layout, so we set grid-area:one and grid-area:two then use grid-template-areas */
+
+  .slide .grid > *:first-child,
+  .slide .grid > *:nth-child(2){
+    animation: fadeIn 2s;
+      opacity: 1;
+  }
+
+  .image1,
+  .image3{
+    transition: filter 2s ease-in-out;
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+
+
+  /* this is to remove the slide feature for the project section on the small screen  
+  instead I added the fadeIn feature, which works better on small screen; */
+}
