@@ -326,6 +326,12 @@ and grab 2nd child which is on the right to slide from right */
   }
 }
 
+.slideFromLeft{
+  animation: slideFromLeft 4s;
+  	opacity: 1;
+}
+/* this is for contact me portion, slidefromleft */
+
 @media(max-width:768px) {
   .grid{
     grid-template-columns: 1fr;
