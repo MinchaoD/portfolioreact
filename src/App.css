@@ -224,8 +224,11 @@ to be same as the width/height under the hover, and the image1 width/height will
   object-fit: fill;
   z-index: 1;
   transition: filter 2s ease-in-out;
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%);
+  /* if I want to change the image from grey to colorful only when hovering, I need to change the above 2 lines code to:
   -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
+  filter: grayscale(100%); */
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
@@ -236,10 +239,11 @@ to be same as the width/height under the hover, and the image1 width/height will
   transform: scale(1.2);
 }
 
-.parent:hover .image1 {
+/* .parent:hover .image1 {
   -webkit-filter: grayscale(0%); 
   filter: grayscale(0%);
 }
+the above code are only needed when hovering to change from grey to colorful */
 
 /* line 235 is for when hover parent, the image1 changes, while  
 line 231 is when image1 hover, image1 changes */
@@ -251,8 +255,8 @@ line 231 is when image1 hover, image1 changes */
   object-fit: fill;
   z-index: 1;
   transition: filter 2s ease-in-out;
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%);
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
@@ -263,10 +267,10 @@ line 231 is when image1 hover, image1 changes */
   transform: scale(1.2);
 }
 
-.parent:hover .image3 {
+/* .parent:hover .image3 {
   -webkit-filter: grayscale(0%); 
   filter: grayscale(0%);
-}
+} */
 
 .content{
   background-color: white;

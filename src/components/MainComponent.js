@@ -89,7 +89,7 @@ function Projects() {
                 </ScrollAnimation>
             </div>
             <ScrollAnimation animateIn='fadeIn'> 
-                <ScrollAnimation animateIn='slide'>
+                {/* <ScrollAnimation animateIn='slide'> */}
                     <div className='parent grid'>
                             <div className='frame'>
                                 <a target="_blank" href="https://hawaii-travel-2021.netlify.app"> <img className='image1' src='/assets/images/project hawaii.png' alt="project hawaii" /> </a>
@@ -105,12 +105,12 @@ function Projects() {
                                 </div>
                             </div>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </ScrollAnimation>
            
 
             <ScrollAnimation animateIn='fadeIn'> 
-                <ScrollAnimation animateIn='slide'>
+                {/* <ScrollAnimation animateIn='slide'> */}
                     <div className='parent project grid'>
                         <div className = 'content1'  >
                             <p style={{ fontSize: "2em" }} >Real Estate Search App</p>
@@ -127,14 +127,14 @@ function Projects() {
                             <a target="_blank" href="https://realestate-search.netlify.app"> <img className='image1' src='/assets/images/project real estate.png' alt="project real estate" /> </a>
                         </div>
                     </div>
-                </ScrollAnimation>               
+                {/* </ScrollAnimation>                */}
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeIn'> 
-                <ScrollAnimation animateIn='slide'>
+                {/* <ScrollAnimation animateIn='slide'> */}
                     <div className='parent grid'>
                         <div className='frame'>
-                            <a target="_blank" href="https://spacestagram-duclos.netlify.app"> <img className='image1' src='/assets/images/project space.png' alt="project hawaii" /> </a>
+                            <a target="_blank" href="https://spacestagram-duclos.netlify.app"> <img className='image1' src='/assets/images/project space.png' alt="project spacestagram" /> </a>
                         </div>
                         <div className = 'content'  >
                             <p style={{ fontSize: "2em" }} >Spacestagram</p>
@@ -147,11 +147,11 @@ function Projects() {
                             </div>
                         </div>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeIn'> 
-                <ScrollAnimation animateIn='slide'>
+                {/* <ScrollAnimation animateIn='slide'> */}
                     <div className='parent project grid'>
                         <div className = 'content1'  >
                             <p style={{ fontSize: "2em" }} >To Do List Mobile App</p>
@@ -165,34 +165,34 @@ function Projects() {
                             </div>
                         </div>
                         <div className='image frame'>
-                            <a target="_blank" href="https://expo.io/@minchao/todolist"> <img className='image3' src='/assets/images/project todolist.png' alt="project real estate" /> </a>
+                            <a target="_blank" href="https://expo.io/@minchao/todolist"> <img className='image3' src='/assets/images/project todolist.png' alt="project to do list" /> </a>
                         </div>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeIn'> 
-                <ScrollAnimation animateIn='slide'>
+                {/* <ScrollAnimation animateIn='slide'> */}
                     <div className='parent grid'>
                         <div className='frame'>
-                            <a target="_blank" href="https://nucamp-website.netlify.app/"> <img className='image1' src='/assets/images/project nucamp.png' alt="project hawaii" /> </a>
+                            <a target="_blank" href="https://paint-app2021.netlify.app/"> <img className='image1' src='/assets/images/paint-app.png' alt="project paint app" /> </a>
                         </div>
                         <div className = 'content'  >
-                            <p style={{ fontSize: "2em" }} >Nucamp Campsites</p>
-                            <p style={{ fontSize:'1.2em', color:'#787878' }} >Group Project (from Nucamp)</p>
-                            <p style={{ fontSize: "1.5em" }} >React | Redux | React Router | Json Server</p>
-                            <p style={{color:'#787878'}}>This project was developed with ReactJS and Redux. The challenge features are setting up Json Server and posting newly added comments.</p>
+                            <p style={{ fontSize: "2em" }} >Paint App</p>
+                            <p style={{ fontSize:'1.2em', color:'#787878' }} >Solo Project (from design to deployment)</p>
+                            <p style={{ fontSize: "1.5em" }} >HTML | CSS | BootStrap | Javascript</p>
+                            <p style={{color:'#787878'}}>This paint app has complete functions of drawing with colors auto-changing, adding stamps, erasing and saving the drawing.</p>
                             <div>
-                                <a target="_blank" href="https://nucamp-website.netlify.app/" style={{textDecoration : "none" }} > <Button className="btn-project" style={{margin:'20px'}} >Demo</Button></a>
-                                <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}} > <Button className="btn-project" style={{margin:'20px'}}>Code</Button></a>
+                                <a target="_blank" href="https://paint-app2021.netlify.app/" style={{textDecoration : "none" }} > <Button className="btn-project" style={{margin:'20px'}} >Demo</Button></a>
+                                <a target="_blank" href="https://github.com/chaohg/paint-app" style={{textDecoration : "none"}} > <Button className="btn-project" style={{margin:'20px'}}>Code</Button></a>
                             </div>
                         </div>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeIn'> 
-                <ScrollAnimation animateIn='slide'>
+                {/* <ScrollAnimation animateIn='slide'> */}
                     <div className='parent project grid'>
                         <div className = 'content1'  >
                             <p style={{ fontSize: "2em" }} >Current Time Project</p>
@@ -206,139 +206,11 @@ function Projects() {
                             </div>
                         </div>
                         <div className='image frame'>
-                            <a target="_blank" href="https://clock-currenttime.netlify.app/"> <img className='image1' src='/assets/images/project-clock.png' alt="project real estate" /> </a>
+                            <a target="_blank" href="https://clock-currenttime.netlify.app/"> <img className='image1' src='/assets/images/project-clock.png' alt="project clock" /> </a>
                         </div>
                     </div>
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
             </ScrollAnimation>
-{/*         
-            <div className ="row mb-4 justify-content-center">
-               
-                <div className = "col m-2">
-                    <Card className={useStyles().border} style={{ width: '30' }}  >
-                            <CardImg   height='400vw' src="/assets/images/project-house.png" alt="image"/>
-                            <CardBody  className={useStyles().root} >
-                            
-                                <CardTitle>Real Estate Search App</CardTitle>
-                        
-                                <CardText>
-                                    <span>I used ReactJS to develope this website, fetching from an API and rendering the search results with Google maps, virtual tours and many more detail information for each property.</span>
-                                </CardText>
-                                
-                                <a target="_blank" href="https://realestate-search.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                                <a target="_blank" href="https://www.loom.com/share/62f733b1a9ad4d3aabe0e3625b3022e2" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'center'}}>Video</Button></a>
-                                <a target="_blank" href="https://github.com/chaohg/realestateapp" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                            </CardBody>
-                    </Card>
-                </div>
-                <div className = "col m-2">
-                    <Card className={useStyles().border} style={{ width: '30' }} >
-                            <CardImg  height='400vw' src="/assets/images/project-hawaii.png" alt="image"/>
-                            <CardBody   className={useStyles().root} >
-                            
-                                <CardTitle>Hawaii Travel</CardTitle>
-                        
-                                <CardText>
-                                    <span> For this project I used mostly Bootstrap and CSS to create a Hawaii travel website, with flip cards feature for the Cuisine section. I focused on layout design and user interaction.</span>
-                                </CardText>
-                             
-                                <a target="_blank" href="https://hawaii-travel-2021.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                            
-                                <a target="_blank" href="https://github.com/chaohg/traveltoHawaii" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                            </CardBody>
-                    </Card>
-                </div>
-                
-            </div>
-            <div className ="row mb-4 justify-content-center">
-            <div className = "col m-2">
-                <Card className={useStyles().border} style={{ width: '20' }} >
-                <CardImg height='400vw' src="/assets/images/project-todolist.png" alt="image"/>
-                        <CardBody  className={useStyles().root} >
-                        
-                            <CardTitle>To Do List Mobile App</CardTitle>
-                      
-                            <CardText>
-                                <span> I built this to-do-list mobile app with Redux in React Native. It can add and delete tasks. The data can be stored using Persist Redux Store. </span>
-                            </CardText>
-                    
-                            <a target="_blank" href="https://expo.io/@minchao/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                           
-                            <a target="_blank" href="https://github.com/chaohg/todolist" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                        </CardBody>
-                </Card>
-            </div>
-            <div className = "col m-2">
-                <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height='400vw'  src="/assets/images/project-space.png" alt="image"/>
-                        <CardBody  className={useStyles().root} >
-                        
-                            <CardTitle>Spacestagram</CardTitle>
-                      
-                            <CardText>
-                                <span> This is a projected developed with ReactJS, getting data from NASA API. The user can pick the dates to render different information. </span>
-                            </CardText>
-                            <a target="_blank" href="https://spacestagram-duclos.netlify.app/" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                           
-                            <a target="_blank" href="https://github.com/chaohg/spacestagram" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                        </CardBody>
-                </Card>
-            </div>
-          </div> */}
-          {/* <div className ="row justify-content-center">
-            <div className = "col m-2">
-                <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height='400vw'  src="/assets/images/project-nucamp.png" alt="image"/>
-                        <CardBody  className={useStyles().root} >
-                        
-                            <CardTitle>Nucamp Project</CardTitle>
-                      
-                            <CardText>
-                                <span> This project was developed with ReactJS as well as Redux. The github was set up in branches to record every step of the development.  </span>
-                            </CardText>
-                        
-                            <a target="_blank" href="https://nucamp-website.netlify.app/" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                           
-                            <a target="_blank" href="https://github.com/chaohg/nucampsite_react/tree/master" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                        </CardBody>
-                </Card>
-            </div> */}
-
-            {/* <div className = "col m-2">
-                <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg  height='400vw'  src="/assets/images/project-clock.png" alt="image"/>
-                        <CardBody  className={useStyles().root} >
-                        
-                            <CardTitle>Current Time Project</CardTitle>
-                      
-                            <CardText>
-                                <span> This is a little fun project! I was able to build an app to show current time with second, minute and hour hands on a working clock.  </span>
-                            </CardText>
-                        
-                            <a target="_blank" href="https://clock-currenttime.netlify.app/" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                           
-                            <a target="_blank" href="https://github.com/chaohg/clock-currenttime" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                        </CardBody>
-                </Card>
-            </div> */}
-            
-            {/* <div className = "col m-2">
-                <Card className={useStyles().border} style={{ width: '30' }} >
-                <CardImg height='400vw'  src="/assets/images/project-portfolio1.png" alt="image"/>
-                        <CardBody  className={useStyles().root} >
-                        
-                            <CardTitle>Portfolio Website</CardTitle>
-                      
-                            <CardText>
-                                <span> This is a portfolio I made with React mostly. It was fun to explore the ways of adding the animations for this little project by using CSS. </span>
-                            </CardText>
-                        
-                            <a target="_blank" href="https://minchao-duclos.netlify.app" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float:'left'}}>Demo</Button></a>
-                           
-                            <a target="_blank" href="https://github.com/chaohg/portfolio" style={{textDecoration : "none"}}> <Button className="btn-project" style={{float: 'right'}}>Code</Button></a>
-                        </CardBody>
-                </Card>
-            </div> */}
         </div>
  )
 }  
